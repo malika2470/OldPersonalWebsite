@@ -1,128 +1,97 @@
-*{ 
-    margin: 0; 
-    padding: 0; 
-    font-family: 'Poppins', sans-serif; 
-    box-sizing: border-box; 
-}
-html{ 
-    scroll-behavior: smooth;
-}
-body { 
-    background: #080808; 
-    color: #fff; 
-}
-.container{ 
-    padding: 10px 10%; 
-}
-nav{ 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-}
-nav ul li{ 
-    display: inline-block; 
-    list-style: none;
-    margin: 10px 20px; 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malika's Website </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header"> 
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Computer Science Student</p>
+            <h1>Hi, I'm <span>Malika</span><br>Sharma</h1>
+        </div>
+    </div>
+</div>
 
-}
-nav ul li a{ 
-    color: #fff; 
-    text-decoration: none; 
-    font-size: 18px; 
-    position: relative; 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a dedicated and highly motivated individual currently pursuing an Honours Bachelor of Science in Computer Science at Wilfrid Laurier University. I am enrolled in the Co-op Program, allowing me to gain practical experience in the field while expanding my knowledge and skills. I have a passion for coding and problem-solving. In addition to my academic pursuits, I have also gained valuable experience as a Supervisor at Tim Hortons. This role has allowed me to develop strong communication and interpersonal skills through interactions with customers and effectively resolving customer complaints. Furthermore, I have showcased exceptional leadership abilities by guiding and training new employees, making informed decisions, and successfully managing high-volume front store and drive-thru operations during peak periods. My exemplary time management skills have enabled me to efficiently coordinate multiple responsibilities, including ensuring timely employee breaks. </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <div class="layer">
+                    <h3><br>Personal Budget Tracker</h3>
+                    <p> • Developed a program in Python that allows users to enter their income and expenses, categorize them, and generate reports based on the information entered. Utilized Python libraries to store and visualize data. Created a user-friendly interface to enable easy data entry.</p>
+                    <a href="https://github.com/malika2470/BudgetTracker">https://github.com/malika2470/BudgetTracker<br></a>
+                </div>
+            </div>
+            <div class="work">
+                <div class="layer">
+                    <h3><br>To-Do List</h3>
+                    <p> • Developed a Java-based to-do list application with a user-friendly menu interface, allowing users to add, view, mark as completed, and remove tasks. Implemented the Task class to represent individual tasks, tracking their descriptions, completion status, created date, and completion date using the Java time API. Utilized data structures such as Array List to store and manage tasks, while leveraging methods such as getDaysToComplete() and showStatistics() to provide insightful task statistics.</p>
+                    <a href="https://github.com/malika2470/BudgetTracker">https://github.com/malika2470/To-doList<br></a>
+                </div>
+            </div>
+            <div class="work">
+                <div class="layer">
+                    <h3><br>Maze Solver<br></h3>
+                    <p> • Developed a maze solver program using C that reads a maze from a file and finds a path from the starting point to the end point. Implemented a stack data structure to perform depth-first search (DFS) traversal of the maze and backtracking when necessary. Analyzed and manipulated the maze data to identify the end point or report if no path was found.</p>
+                    <a href="https://github.com/malika2470/BudgetTracker">https://github.com/malika2470/MazeSolve<br></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-}
-nav ul li a::after{ 
-    content: ''; 
-    width: 0; 
-    height: 3px; 
-    background: #ff004f; 
-    position: absolute; 
-    left: 0; 
-    bottom: -6px; 
-    transition: 0.5s; 
-    
-}
-nav ul li a:hover::after{ 
-    width: 100%; 
-}
-.header-text{ 
-    margin-top: 20%; 
-    font-size: 30px; 
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>shar9350@mylaurier.ca</p>
+                <p>519-835-2814</p>
+                <div class="social-icons">
+                    <a href="https://github.com/malika2470">https://github.com/malika2470</a>
+                    <a href="https://www.linkedin.com/in/malika-sharma-computer-science/">https://www.linkedin.com/in/malika-sharma-computer-science/</a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+            <form>
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
 
-}
-.header-text h1{ 
-    font-size: 60px; 
-    margin-top: 20px; 
+            </form>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
 
-}
-.header-text h1 span{ 
-    color: #ff004f; 
-}
+</body>
+</html>
 
-#about{ 
-    padding: 150px 0; 
-    color: #ababab; 
-}
-.row{ 
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-}
-.about-col-1{ 
-    flex-basis: 60%; 
-}
-.sub-title{ 
-    font-size: 60px; 
-    font-weight: 600; 
-    color: #fff; 
-}
-#portfolio{ 
-    padding: 150px 0; 
-    color: #ababab; 
-}
-#contact{ 
-    padding: 150px 0; 
-    color: #ababab; 
-}
-.layer{ 
-    font-size: 14px; 
-}
-.layer h3{ 
-    font-weight: 500; 
-    margin-bottom: 20px;
-}
-.btn.btn2 {
-    background-color: #ff004f;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .btn.btn2:hover {
-    background-color: #ff0060;
-  }
-.contact-left{ 
-    flex-basis: 35%; 
-}
-.contact-right{ 
-    flex-basis: 60%; 
-}
-.contact-right form{ 
-    width: 100% 
-}
-form input, form textarea{ 
-    width: 100%; 
-    border: 0; 
-    outline: none; 
-    background: #262626; 
-    padding: 15px; 
-    margin: 15px 0; 
-    color: #fff; 
-    font-size: 18px; 
-    border-radius: 6px; 
-}
